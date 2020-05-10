@@ -21,6 +21,10 @@ class Block{
     static hash(creationDate, lastHash, data){
         return crypto.SHA256(`${creationDate}${lastHash}${data}`).toString()
     }
+
+    static blockHash(block){
+        return this.hash(block.creationDate, block.lastHash, block.data)
+    }
 }
 
 

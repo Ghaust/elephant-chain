@@ -1,7 +1,7 @@
-const Block = require('../classes/block')
+const Block = require('../block')
 
     describe('Block Class', () => {
-        let data, lastBock, currentBlock
+        let data, lastBlock, currentBlock
 
         beforeEach(() => {
             data = 'Dummy data for testing'
