@@ -22,8 +22,7 @@ class Blockchain {
             if(currentBlock.lastHash !== lastBlock.hash || currentBlock.hash !== Block.blockHash(currentBlock) )  
                 return false
         }
-        console.log("test passed");
-        
+
         return true
     }
 
